@@ -1,0 +1,28 @@
+{
+	"name": "cards",
+	"version": "1.0.0",
+	"private": true,
+	"description": "A party game similar to Cards Against Humanity, implemented as a React app",
+	"main": "server.js",
+	"scripts": {
+		"test": "node ./tests.js",
+		"start": "node ./server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ctwelve/cards.git"
+	},
+	"keywords": [
+		"react",
+		"JSON",
+		"Cards Against Humanity",
+		"learning",
+		"Node.js"
+	],
+	"author": "Justin Croonenberghs <jlcroonen@me.com>",
+	"license": "BSD-3-Clause",
+	"bugs": {
+		"url": "https://github.com/ctwelve/cards/issues"
+	},
+	"homepage": "https://github.com/ctwelve/cards#readme"
+}

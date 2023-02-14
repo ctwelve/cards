@@ -1,7 +1,5 @@
 {
-    "css.lint.unknownAtRules": "ignore",
-    "prettier.useTabs": true,
-    "editor.insertSpaces": false,
-    "editor.formatOnSave": true,
-    "eslint.format.enable": true
+	"editor.insertSpaces": false,
+	"editor.formatOnSave": true,
+	"eslint.format.enable": true
 }
