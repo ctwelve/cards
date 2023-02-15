@@ -1,12 +1,32 @@
-const blegh = "woah";
-console.log(`hello ${blegh}`);
+import express from "express";
+import http from "http";
 
-const obj = { hey: 1 };
-const obj2 = { ...obj, blegh: 2 };
-console.log(obj2);
+// Fetch settings
+import { isDevelopment } from "./settings";
 
-class AppComponent {
-	static PropTypes = {
-		blegh: "whoa",
-	};
-}
+// --------------------
+// SETUP
+const app = express();
+const server = new http.Server(app);
+
+// --------------------
+// CONFIG
+app.set("view engine", "pug");
+app.use(express.static("public"));
+
+const useExternalStyles = !isDevelopment;
+const scriptRoot = isDevelopment ? "http://localhost:8080/build" : "/build";
+
+app.get("*", (req, res) => {
+	res.render("index", {
+		useExternalStyles,
+		scriptRoot
+	});
+});
+
+// --------------------
+// STARTUP
+const port = process.env.PORT || 3000;
+server.listen(port, () => {
+	console.log(`Started http server on ${port}`);
+});

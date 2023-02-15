@@ -1,5 +1,4 @@
 {
-	"editor.insertSpaces": false,
-	"editor.formatOnSave": true,
-	"eslint.format.enable": true
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": true
 }

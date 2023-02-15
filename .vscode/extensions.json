@@ -3,6 +3,7 @@
 		"webben.browserslist",
 		"mgmcdermott.vscode-language-babel",
 		"dsznajder.es7-react-js-snippets",
-		"dbaeumer.vscode-eslint"
+		"dbaeumer.vscode-eslint",
+		"esbenp.prettier-vscode"
 	]
 }
